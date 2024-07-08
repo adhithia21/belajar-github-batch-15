@@ -87,3 +87,5 @@ jobs:
           script: |
             pwd
             ls -la
+            git clone git@github.com:adhithia21/belajar-github-batch-15.git
+            ls -la
