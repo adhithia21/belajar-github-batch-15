@@ -12,17 +12,21 @@ jobs:
         run: |
           echo "misal ini akan menjalankan unit test"
 
-  buid:
+  build:
     name: build applicatiom
     runs-on: ubuntu-22.04
+    needs:
+    - test
     steps:
       - name: run build
         run: |
           echo "misal ini akan build/package aplikasi"
 
-  build:
+  deploy:
     name: deploy applicatiom
     runs-on: ubuntu-22.04
+    needs:
+    - build
     steps:
       - name: run build
         run: |
