@@ -87,5 +87,7 @@ jobs:
           script: |
             pwd
             ls -la
+            rm -rf belajar-github-batch-15
             git clone git@github.com:adhithia21/belajar-github-batch-15.git
             ls -la
+            sudo cp -r belajar-github-batch-15/* /var/www/html
